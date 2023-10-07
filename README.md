@@ -5,7 +5,9 @@
 
 1- **film** tablosunda bulunan __title__ ve **description** sütunlarındaki verileri sıralayınız.
 
-SELECT title,description FROM film;
+'SELECT title,description FROM film;'
+
+
 
 2-**film** tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük __VE__ 75 ten küçük olma koşullarıyla sıralayınız.
 
