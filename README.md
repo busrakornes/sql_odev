@@ -5,7 +5,7 @@
 
 1- **film** tablosunda bulunan __title__ ve **description** sütunlarındaki verileri sıralayınız.
 
-`SELECT title,description FROM film;`
+```SELECT title,description FROM film;```
 
 
 
