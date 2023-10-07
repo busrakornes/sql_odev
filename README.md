@@ -1,2 +1,2 @@
-# sql_odev
-SQL Eğitim Patika
+
+# SQL Eğitim Patika
