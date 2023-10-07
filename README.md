@@ -4,6 +4,9 @@
 
 ##### ÖDEV 1 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-1)
 ##### ÖDEV 2 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-2)
+##### ÖDEV 3 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-3)
+
+
 
 
 ## ÖDEV 1 
@@ -92,6 +95,50 @@ WHERE first_name IN('Penelope','Nick','Ed');
 
 SELECT * FROM film
 WHERE rental_rate IN (0.99,2.99,4.99) AND replacement_cost IN (12.99,15.99,28.99);
+
+```
+
+
+
+## ÖDEV 3
+
+1-) **country** tablosunda bulunan **country** sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
+
+```
+
+SELECT * FROM country
+WHERE country LIKE 'A%a';
+
+```
+
+
+
+2-) **country** tablosunda bulunan __country__ sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
+
+```
+
+SELECT * FROM country
+WHERE country LIKE '_____n';
+
+```
+
+3-) **film** tablosunda bulunan __title__ sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
+
+```
+
+SELECT * FROM film
+WHERE title ~~* '%T%t%t%t%';
+
+```
+
+
+
+4-) **film** tablosunda bulunan tüm sütunlardaki verilerden **title** 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
+
+```
+
+SELECT * FROM film
+WHERE title ~~* 'c%' AND length >90 AND rental_rate=2.99;
 
 ```
 
