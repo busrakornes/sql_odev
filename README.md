@@ -1,6 +1,10 @@
 
 # SQL Eğitim Patika
-### ÖDEV 2 [Başlıklı Bağlantı]()
+
+
+### ÖDEV 1 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-1)
+### ÖDEV 2 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-2)
+
 
 ## ÖDEV 1 
 
