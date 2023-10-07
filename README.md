@@ -1,5 +1,6 @@
 
 # SQL Eğitim Patika
+### ÖDEV 2 [Başlıklı Bağlantı]()
 
 ## ÖDEV 1 
 
