@@ -5,6 +5,7 @@
 ##### ÖDEV 1 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-1)
 ##### ÖDEV 2 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-2)
 ##### ÖDEV 3 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-3)
+##### ÖDEV 4 [Bağlantı](https://github.com/busrakornes/sql_odev/blob/main/README.md#%C3%B6dev-4)
 
 
 
@@ -141,5 +142,62 @@ SELECT * FROM film
 WHERE title ~~* 'c%' AND length >90 AND rental_rate=2.99;
 
 ```
+
+
+
+
+## ÖDEV 4
+
+1-) **film** tablosunda bulunan **replacement_cost** sütununda bulunan birbirinden farklı değerleri sıralayınız.
+
+```
+
+SELECT DISTINCT replacement_cost FROM film;
+
+```
+
+
+
+2-) **film** tablosunda bulunan __replacement_cost__ sütununda birbirinden farklı kaç tane veri vardır?
+
+```
+
+SELECT COUNT(DISTINCT replacement_cost) FROM film;
+
+```
+
+
+
+3-) **film** tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+
+```
+
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'T%' AND rating='G';
+
+```
+
+
+
+4-) **country** tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+
+```
+
+SELECT COUNT(*) FROM country
+WHERE country LIKE '_____';
+
+```
+
+
+
+5-) **city** tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+
+```
+
+SELECT COUNT(*) FROM city
+WHERE city ILIKE '%R';
+
+```
+
 
 
